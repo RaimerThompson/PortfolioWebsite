@@ -3,31 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
   <title>Raimer - Thompson - Portfolio Website</title>
 
   <style>
-    .nav-links{
+    body {
+      font-family: 'Outfit', sans-serif;
+      box-sizing: border-box;
+    }
+
+
+    .nav-tabs, .nav-tabs-links, .nav-links{
       display: flex;
       justify-content: space-evenly;
       list-style-type: none;
       cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+    }
+
+    .nav-tabs-links::after {
+      content: '';
+      width: 0%;
+      height: 6px;
+      background: rgb(167, 60, 115);
+      position: absolute;
+      left: 0 ;
+      bottom: -6px;
+      transition: .4s;
+    }
+
+    .nav-tabs-links:hover::after{
+      width: 90%;
+    }
+
+    .name{
+      font-size: 3.5rem;
+    }
+
+    .below-name{
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    .name-description {
+      font-size: 2rem;
+    }
+    .hero-section{
+      display: flex;
+      justify-content: center;
+    }
+
+    .about-me-container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .raimer1-pic{
+      height: 15rem;
+      border-radius: 10px;
+    }
+
+    footer{
+      position: relative;
+      bottom: 0;
+      font-size: .7rem;
+      margin-top: 2rem;
     }
 
   </style>
 </head>
 <body>
+<!-- Header Section-->  
   <header>
     <nav>
       <ul class="nav-links">
-        <li class="nav-tabs">Home</li>
-        <li class="nav-tabs">Portfolio</li>
-        <li class="nav-tabs">About</li>
-        <li class="nav-tabs">Contact</li>
+        <li class="nav-tabs">
+          <a class="nav-tabs-links" href="#home">Home</a></li>
+        <li class="nav-tabs">
+          <a class="nav-tabs-links" href="#about">About</a></li>
+        <li class="nav-tabs">
+          <a class="nav-tabs-links" href="#portfolio">Portfolio</a></li>
+        <li class="nav-tabs"><a class="nav-tabs-links" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
-  
-  
 
+  <!-- Hero Section -->
+  <main>
+    <section id="home">
+      <h1 class="name-description">Hello I'm <span class="name">Raimer Thompson</span> <p class="below-name">Frontend Web Developer</p>
+
+    </section>
+  </main>
+
+    <section class="skills-section">
+      <div class="skills-logo">
+      
+      </div>
+    </section>
+
+  <!-- About Me Section-->
+    <section id="about">
+      <div class="about-me-container">
+        <h2 >ABOUT ME</h2>
+        <img class="raimer1-pic" src="images/Raimer1.jpg" alt="">
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
+      </p>
+      <p>Skills</p>
+
+    </section>
+
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h2>PORTFOLIO</h2>
+    <div class="work-container">
+      <div class="work-portfolio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
+      </div>
+      <div class="work-portfolio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
+      </div>
+      <div class="work-portfolio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>CONTACT ME</h2>
+    name: <input type="text" name="" id="">
+    email: <input type="email" placeholder="example@abc.com"> 
+  </section>
+  <!-- Footer Section-->
+  <footer>Raimer Thompson	&copy; 2023</footer>
 </body>
 </html>
