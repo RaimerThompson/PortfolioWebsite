@@ -63,9 +63,19 @@
       align-items: center;
     }
 
+    .about-me-text{
+      font-size: 1rem;
+      font-weight: normal;
+      margin-top: 15px;
+    }
+
     .raimer1-pic{
       height: 15rem;
       border-radius: 10px;
+    }
+
+    .icon{
+      height: 3.5rem;
     }
 
     footer{
@@ -75,6 +85,9 @@
       margin-top: 2rem;
     }
 
+    .work-container{
+      display: flex;
+    }
   </style>
 </head>
 <body>
@@ -97,25 +110,28 @@
   <main>
     <section id="home">
       <h1 class="name-description">Hello I'm <span class="name">Raimer Thompson</span> <p class="below-name">Frontend Web Developer</p>
-
     </section>
   </main>
 
     <section class="skills-section">
-      <div class="skills-logo">
-      
+      <div class="skills-icons">
+        <img class="icon" src="images/csshtmljslogo.png" alt="">
+        <img class="icon" src="images/github.png" alt="">
       </div>
     </section>
 
   <!-- About Me Section-->
     <section id="about">
       <div class="about-me-container">
-        <h2 >ABOUT ME</h2>
+        <h2 >ABOUT ME
+          <div class="about-me-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
+          </div>
+        </h2>
         <img class="raimer1-pic" src="images/Raimer1.jpg" alt="">
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
-      </p>
-      <p>Skills</p>
+     
+      
+      
 
     </section>
 
@@ -124,11 +140,17 @@
   <section id="portfolio">
     <h2>PORTFOLIO</h2>
     <div class="work-container">
-      <div class="work-portfolio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
+      <div class="work-portfolio">
+        <div>Title</div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
       </div>
-      <div class="work-portfolio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
+      <div class="work-portfolio">
+        <div>Title</div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
       </div>
-      <div class="work-portfolio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
+      <div class="work-portfolio">
+        <div>Title</div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
       </div>
     </div>
   </section>
