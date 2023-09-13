@@ -5,24 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Karla:wght@400;500;600;700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
   <title>Raimer - Thompson - Portfolio Website</title>
 
   <style>
     body {
-      font-family: 'Outfit', sans-serif;
+      font-family:  'Karla', sans-serif;
       box-sizing: border-box;
+      line-height: 40px;
     }
 
+    nav{
+      display: flex;
+      justify-content: space-between;
+    }
 
     .nav-tabs, .nav-tabs-links, .nav-links{
       display: flex;
-      justify-content: space-evenly;
       list-style-type: none;
       cursor: pointer;
       text-decoration: none;
       color: inherit;
       position: relative;
+      font-weight: 500;
     }
 
     .nav-tabs-links::after {
@@ -32,7 +37,7 @@
       background: rgb(167, 60, 115);
       position: absolute;
       left: 0 ;
-      bottom: -6px;
+      bottom: -1px;
       transition: .4s;
     }
 
@@ -40,8 +45,27 @@
       width: 90%;
     }
 
+    .nav-links{
+      gap: 10px;
+    }
+
+    .nav-icons{
+      display: flex;
+      align-items: center;
+      flex: 1;
+    }
+
+    .in-icon{
+      height: 1rem;
+    }
+
+    .git-icon{
+      height: 4rem;
+    }
+
     .name{
-      font-size: 3.5rem;
+      font-size: 3.8rem;
+      color: black;
     }
 
     .below-name{
@@ -51,6 +75,7 @@
 
     .name-description {
       font-size: 2rem;
+      color: rgb(84, 83, 83);
     }
     .hero-section{
       display: flex;
@@ -63,6 +88,7 @@
       align-items: center;
     }
 
+
     .about-me-text{
       font-size: 1rem;
       font-weight: normal;
@@ -74,8 +100,19 @@
       border-radius: 10px;
     }
 
+    .portfolio-title:hover::after {
+      content: '';
+      width: 10%;
+      height: 6px;
+      background: rgb(167, 60, 115);
+      position: absolute;
+      bottom: 0;
+      left: -6px;
+      transition: 1.5s;
+    }
+
     .icon{
-      height: 3.5rem;
+      height: 2.5rem;
     }
 
     footer{
@@ -88,12 +125,21 @@
     .work-container{
       display: flex;
     }
+
+    #contact{
+      background: rgb(231, 208, 220);
+      color: whit
+    }
   </style>
 </head>
 <body>
 <!-- Header Section-->  
   <header>
     <nav>
+      <div class="nav-icons">
+        <img class="git-icon" src="images/github.png" alt="">
+        <img class="in-icon" src="images/linkin.png" alt="">
+      </div>
       <ul class="nav-links">
         <li class="nav-tabs">
           <a class="nav-tabs-links" href="#home">Home</a></li>
@@ -109,14 +155,13 @@
   <!-- Hero Section -->
   <main>
     <section id="home">
-      <h1 class="name-description">Hello I'm <span class="name">Raimer Thompson</span> <p class="below-name">Frontend Web Developer</p>
+      <h1 class="name-description">Welcome I'm <br><span class="name">Raimer Thompson</span> <p class="below-name">Front-end Developer</p>
     </section>
   </main>
 
     <section class="skills-section">
       <div class="skills-icons">
         <img class="icon" src="images/csshtmljslogo.png" alt="">
-        <img class="icon" src="images/github.png" alt="">
       </div>
     </section>
 
@@ -138,7 +183,7 @@
 
   <!-- Portfolio -->
   <section id="portfolio">
-    <h2>PORTFOLIO</h2>
+    <h2 class="portfolio-title">PORTFOLIO</h2>
     <div class="work-container">
       <div class="work-portfolio">
         <div>Title</div>
