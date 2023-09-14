@@ -15,9 +15,15 @@
       line-height: 40px;
     }
 
+    main{
+      height: 100vh;
+      width: 100%;
+    }
+
     nav{
       display: flex;
       justify-content: space-between;
+      
     }
 
     .nav-tabs, .nav-tabs-links, .nav-links{
@@ -42,7 +48,7 @@
     }
 
     .nav-tabs-links:hover::after{
-      width: 90%;
+      width: 50%;
     }
 
     .nav-links{
@@ -63,23 +69,53 @@
       height: 4rem;
     }
 
-    .name{
+    .git-icon:hover, .in-icon:hover{
+      cursor: pointer;
+      opacity: .3;
+    }
+
+    .git-icon:active, .in-icon:active{
+      opacity: 1;
+      }
+
+    .name-raimer, .name-thompson{
       font-size: 3.8rem;
       color: black;
+      margin-top: 5px;
+      
     }
+
+    .name-thompson {
+      margin-left: 55px;
+      margin-top: 20px;
+    }
+    
+    .uppercase-rt{
+      color: rgb(167, 60, 115);
+      font-size: 6rem;
+    }
+
 
     .below-name{
       font-size: 1.5rem;
       margin-top: 10px;
+      margin-left: 120px;
     }
 
     .name-description {
-      font-size: 2rem;
+      font-size: 1.1rem;
       color: rgb(84, 83, 83);
     }
+
     .hero-section{
       display: flex;
       justify-content: center;
+    }
+
+    #home{
+      position: absolute;
+      bottom: 60px;
+      left: 100px;
     }
 
     .about-me-container{
@@ -128,7 +164,20 @@
 
     #contact{
       background: rgb(231, 208, 220);
-      color: whit
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .div-contact{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: space-evenly;
+    }
+
+    textarea{
+      font-family: 'Karla', sans-serif;
+      font-size: .9rem;
     }
   </style>
 </head>
@@ -155,30 +204,32 @@
   <!-- Hero Section -->
   <main>
     <section id="home">
-      <h1 class="name-description">Welcome I'm <br><span class="name">Raimer Thompson</span> <p class="below-name">Front-end Developer</p>
+      <h1 class="name-description">Welcome I'm <br>
+        <div class="name-raimer"><span class="uppercase-rt">R</span>aimer</div> 
+        <div class="name-thompson"><span class="uppercase-rt">T</span>hompson</div> 
+        <p class="below-name"></p>
     </section>
   </main>
 
-    <section class="skills-section">
-      <div class="skills-icons">
-        <img class="icon" src="images/csshtmljslogo.png" alt="">
-      </div>
-    </section>
-
+    
   <!-- About Me Section-->
     <section id="about">
       <div class="about-me-container">
         <h2 >ABOUT ME
-          <div class="about-me-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
+          <div class="about-me-text"> You can call me Ray. Building websites and web apps from scratch. Sports enthusiast with a love for travel and an occasional adrenaline adventure seeker. ,  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
           </div>
         </h2>
         <img class="raimer1-pic" src="images/Raimer1.jpg" alt="">
       </div>
-     
-      
-      
-
     </section>
+
+      <section class="skills-section">
+        <div class="skills-icons">
+          <img class="icon" src="images/csshtmljslogo.png" alt="">
+        </div>
+      </section>
+  
+   
 
 
   <!-- Portfolio -->
@@ -202,9 +253,13 @@
 
   <section id="contact">
     <h2>CONTACT ME</h2>
-    name: <input type="text" name="" id="">
-    email: <input type="email" placeholder="example@abc.com"> 
+    <div class="div-contact">
+      <input type="text" name="" id="" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea name="" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+    </div> 
   </section>
+
   <!-- Footer Section-->
   <footer>Raimer Thompson	&copy; 2023</footer>
 </body>
