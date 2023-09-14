@@ -9,22 +9,31 @@
   <title>Raimer - Thompson - Portfolio Website</title>
 
   <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family:  'Karla', sans-serif;
       box-sizing: border-box;
-      line-height: 40px;
+      line-height: 40x;
     }
 
     main{
       height: 100vh;
-      width: 100%;
-      background: rgb(252, 252, 252);
+    
     }
 
     nav{
       display: flex;
       justify-content: space-between;
-      
+      align-items: center;
+      position: relative;
+      width: 100wv;
+      padding: 20px 10%;
+      top: 0;
+      left: 0;
     }
 
     .nav-tabs, .nav-tabs-links, .nav-links{
@@ -44,7 +53,7 @@
       background: rgb(167, 60, 115);
       position: absolute;
       left: 0 ;
-      bottom: -1px;
+      bottom: -6px;
       transition: .4s;
     }
 
@@ -79,17 +88,33 @@
       opacity: .1;
       }
 
+    #home {
+      margin-top: 50px;
+      margin-bottom: 0px;
+    }
+
+    .name{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .name-button-container{
+      display: flex;
+    }
+
     .name-raimer, .name-thompson{
       font-size: 6rem;
       color: black;
-      margin-top: 5px;
       font-family: 'Outfit', 'san-sarif';
       font-weight: 600;
+      width: fit-content;
+
     }
 
-    .name-thompson {
-      margin-left: 90px;
-      margin-top: 70px;
+    .name-raimer{
+      margin-bottom: -80px;
     }
     
     .uppercase-r, .uppercase-t{
@@ -104,7 +129,6 @@
 
     .below-name{
       font-size: 1.5rem;
-      margin-top: 35px;
       margin-left: 240px;
       color: rgb(84, 83, 83);
     }
@@ -113,7 +137,7 @@
       font-size: 1.2rem;
       color: rgb(84, 83, 83);
       font-weight: 500;
-      margin-bottom: 40px;
+      margin-bottom: -30px;
     }
 
     .hero-section{
@@ -121,11 +145,22 @@
       justify-content: center;
     }
 
-    #home{
-      position: absolute;
-      bottom: 60px;
-      left: 100px;
+    .work-button{
+      background-color:  rgb(167, 60, 115);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      width: fit-content;
+      height: fit-content;
+      padding: 10px;
+      box-shadow: 2px 1px 2px 1px rgba(206, 206, 206, 0.9);
+      cursor: pointer;
+      position: relative;
+      right: 0;
+      top: 100px;
+      bottom: 0;
     }
+
 
     .about-me-container{
       display: flex;
@@ -133,11 +168,11 @@
       align-items: center;
     }
 
-
     .about-me-text{
       font-size: 1rem;
       font-weight: normal;
       margin-top: 15px;
+      max-width: 550px;
     }
 
     .raimer1-pic{
@@ -160,6 +195,10 @@
       height: 2.5rem;
     }
 
+    .skills-section{
+      padding: 0px 10%;
+    }
+
     footer{
       position: relative;
       bottom: 0;
@@ -169,14 +208,21 @@
 
     .work-container{
       display: flex;
+      justify-content: space-between;
     }
 
-    .work-port {
-      background-color:;
+    .work-portfolio {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .work-title {
+      background-color: white;
+      color: black;
     }
 
     #contact{
-      background: rgb(231, 208, 220);
       display: flex;
       justify-content: space-between;
     }
@@ -191,6 +237,32 @@
     textarea{
       font-family: 'Karla', sans-serif;
       font-size: .9rem;
+    }
+
+    .submit-button{
+      background-color:  rgb(167, 60, 115);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      width: 100px;
+      padding: 10px;
+      box-shadow: 2px 1px 2px 1px rgba(206, 206, 206, 0.9);
+      cursor: pointer;
+    }
+
+    .submit-button:active {
+      opacity: .85;
+    }
+
+    #about, #portfolio,#contact, #home {
+      margin-bottom: 50px;
+      align-items: center;
+      padding: 0px 10%;
+    }
+
+    footer{
+      display: flex;
+      justify-content: center;
     }
   </style>
 </head>
@@ -218,9 +290,16 @@
   <main>
     <section id="home">
       <h1 class="above-name">Welcome I'm </h1>
+      <div class="name-button-container">
+      <div class="name">
         <div class="name-raimer"><span class="uppercase-r">R</span>aimer</div> 
-        <div class="name-thompson"><span class="uppercase-t">T</span>hompson</div> 
+        <div class="name-thompson"><span class="uppercase-t">T</span>hompson</div>
+      </div> 
+        <button class="work-button">See My Work</button>
+      </div>
         <p class="below-name">Front-end Developer</p>
+      
+
         
     </section>
   </main>
@@ -228,11 +307,11 @@
     
   <!-- About Me Section-->
     <section id="about">
+      <h2 >ABOUT ME</h2>
       <div class="about-me-container">
-        <h2 >ABOUT ME
-          <div class="about-me-text"> You can call me Ray. Catch me building websites and web apps from scratch. A true sports enthusiast with a love for travel and an occasional adrenaline adventure seeker. My journey in code ..... allowed me to implement my .... Developer devoted to crafting beautiful web experiences focused on simplicity and purpose....,  
-          </div>
-        </h2>
+          <p class="about-me-text"> You can call me Ray. Catch me building websites and web apps from scratch. A true sports enthusiast with a love for travel and an occasional adrenaline adventure seeker. My journey in code ..... allowed me to implement my .... Developer devoted to crafting beautiful web experiences focused on simplicity and purpose....,  
+          </p>
+        
         <img class="raimer1-pic" src="images/Raimer1.jpg" alt="">
       </div>
     </section>
@@ -274,6 +353,7 @@
       <input type="text" name="" id="" placeholder="Your Name">
       <input type="email" placeholder="Your Email">
       <textarea name="" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+      <button class="submit-button">Submit</button>
     </div> 
   </section>
 
