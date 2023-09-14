@@ -18,6 +18,7 @@
     main{
       height: 100vh;
       width: 100%;
+      background: rgb(252, 252, 252);
     }
 
     nav{
@@ -71,40 +72,48 @@
 
     .git-icon:hover, .in-icon:hover{
       cursor: pointer;
-      opacity: .3;
+      opacity: .4;
     }
 
     .git-icon:active, .in-icon:active{
-      opacity: 1;
+      opacity: .1;
       }
 
     .name-raimer, .name-thompson{
-      font-size: 3.8rem;
+      font-size: 6rem;
       color: black;
       margin-top: 5px;
-      
+      font-family: 'Outfit', 'san-sarif';
+      font-weight: 600;
     }
 
     .name-thompson {
-      margin-left: 55px;
-      margin-top: 20px;
+      margin-left: 90px;
+      margin-top: 70px;
     }
     
-    .uppercase-rt{
+    .uppercase-r, .uppercase-t{
       color: rgb(167, 60, 115);
-      font-size: 6rem;
+      font-size: 10.5rem;
+      margin-right: -5px;
     }
 
+    .uppercase-t{
+      margin-right: -20px;
+    }
 
     .below-name{
       font-size: 1.5rem;
-      margin-top: 10px;
-      margin-left: 120px;
+      margin-top: 35px;
+      margin-left: 240px;
+      color: rgb(84, 83, 83);
     }
 
-    .name-description {
-      font-size: 1.1rem;
+    .above-name {
+      font-size: 1.2rem;
       color: rgb(84, 83, 83);
+      font-weight: 500;
+      margin-bottom: 40px;
     }
 
     .hero-section{
@@ -162,6 +171,10 @@
       display: flex;
     }
 
+    .work-port {
+      background-color:;
+    }
+
     #contact{
       background: rgb(231, 208, 220);
       display: flex;
@@ -204,10 +217,11 @@
   <!-- Hero Section -->
   <main>
     <section id="home">
-      <h1 class="name-description">Welcome I'm <br>
-        <div class="name-raimer"><span class="uppercase-rt">R</span>aimer</div> 
-        <div class="name-thompson"><span class="uppercase-rt">T</span>hompson</div> 
-        <p class="below-name"></p>
+      <h1 class="above-name">Welcome I'm </h1>
+        <div class="name-raimer"><span class="uppercase-r">R</span>aimer</div> 
+        <div class="name-thompson"><span class="uppercase-t">T</span>hompson</div> 
+        <p class="below-name">Front-end Developer</p>
+        
     </section>
   </main>
 
@@ -216,7 +230,7 @@
     <section id="about">
       <div class="about-me-container">
         <h2 >ABOUT ME
-          <div class="about-me-text"> You can call me Ray. Building websites and web apps from scratch. Sports enthusiast with a love for travel and an occasional adrenaline adventure seeker. ,  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
+          <div class="about-me-text"> You can call me Ray. Catch me building websites and web apps from scratch. A true sports enthusiast with a love for travel and an occasional adrenaline adventure seeker. My journey in code ..... allowed me to implement my .... Developer devoted to crafting beautiful web experiences focused on simplicity and purpose....,  
           </div>
         </h2>
         <img class="raimer1-pic" src="images/Raimer1.jpg" alt="">
@@ -237,16 +251,19 @@
     <h2 class="portfolio-title">PORTFOLIO</h2>
     <div class="work-container">
       <div class="work-portfolio">
-        <div>Title</div>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
+        <div class="work-title">Title</div>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
+          </div>
       </div>
       <div class="work-portfolio">
-        <div>Title</div>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
+        <div class="work-title">Title</div>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
+          </div>
       </div>
       <div class="work-portfolio">
-        <div>Title</div>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
+        <div class="work-title">Title</div>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
+          </div>
       </div>
     </div>
   </section>
