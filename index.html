@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Karla:wght@400;500;600;700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
   <title>Raimer - Thompson - Portfolio Website</title>
-
+  <script src="https://kit.fontawesome.com/c339e0fb63.js" crossorigin="anonymous"></script>
   <style>
     *{
       margin: 0;
@@ -21,7 +21,6 @@
     }
 
     main{
-      height: 100vh;
     
     }
 
@@ -116,6 +115,10 @@
     .name-raimer{
       margin-bottom: -80px;
     }
+
+    .name-thompson {
+      margin-left: 80px;
+    }
     
     .uppercase-r, .uppercase-t{
       color: rgb(167, 60, 115);
@@ -125,6 +128,8 @@
 
     .uppercase-t{
       margin-right: -20px;
+      color: rgb(167, 60, 115);
+      
     }
 
     .below-name{
@@ -145,10 +150,13 @@
       justify-content: center;
     }
 
+    .button-and-icons{
+      display:flx ;
+    }
+
     .work-button{
-      background-color:  rgb(167, 60, 115);
-      color: white;
-      border: none;
+      background-color: inherit;
+      border: solid .5px rgb(167, 60, 115);;
       border-radius: 10px;
       width: fit-content;
       height: fit-content;
@@ -156,11 +164,28 @@
       box-shadow: 2px 1px 2px 1px rgba(206, 206, 206, 0.9);
       cursor: pointer;
       position: relative;
-      right: 0;
-      top: 100px;
-      bottom: 0;
     }
 
+    .work-button:hover{
+      background-color:  rgb(167, 60, 115);
+      color: white;
+      border-radius: 10px;
+      width: fit-content;
+      height: fit-content;
+      padding: 10px;
+      box-shadow: 2px 1px 2px 1px rgba(206, 206, 206, 0.9);
+      cursor: pointer;
+      position: relative;
+    }
+
+    .fa-github:hover, .fa-linkedin-in:hover{
+      color:  rgb(167, 60, 115);
+      cursor: pointer;
+    }
+
+    .fa-github:active, .fa-linkedin-in:active{
+     opacity: .5; 
+    }
 
     .about-me-container{
       display: flex;
@@ -172,23 +197,19 @@
       font-size: 1rem;
       font-weight: normal;
       margin-top: 15px;
-      max-width: 550px;
+      max-width: 500px;
+    }
+
+    #about h2::after{
+      content: '';
+      background-color: aqua;
+      height: 2px;
+      width: 20%;
     }
 
     .raimer1-pic{
-      height: 15rem;
-      border-radius: 10px;
-    }
-
-    .portfolio-title:hover::after {
-      content: '';
-      width: 10%;
-      height: 6px;
-      background: rgb(167, 60, 115);
-      position: absolute;
-      bottom: 0;
-      left: -6px;
-      transition: 1.5s;
+      height: 17rem;
+      border-radius: 20px;
     }
 
     .icon{
@@ -197,6 +218,10 @@
 
     .skills-section{
       padding: 0px 10%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-bottom: 50px;
     }
 
     footer{
@@ -217,26 +242,26 @@
     flex-direction: column;
     }
 
-    .work-title {
-      background-color: white;
-      color: black;
-    }
-
     #contact{
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
 
+    #porfolio
+
     .div-contact{
-      display: flex;
-      flex-direction: column;
       gap: 10px;
-      justify-content: space-evenly;
+    }
+
+    input{
+      display: block;
     }
 
     textarea{
       font-family: 'Karla', sans-serif;
       font-size: .9rem;
+      display: block;
     }
 
     .submit-button{
@@ -248,6 +273,10 @@
       padding: 10px;
       box-shadow: 2px 1px 2px 1px rgba(206, 206, 206, 0.9);
       cursor: pointer;
+    }
+
+    #about, #portfolio{
+      background-color: rgb(248, 248, 248);
     }
 
     .submit-button:active {
@@ -264,6 +293,7 @@
       display: flex;
       justify-content: center;
     }
+
   </style>
 </head>
 <body>
@@ -295,7 +325,13 @@
         <div class="name-raimer"><span class="uppercase-r">R</span>aimer</div> 
         <div class="name-thompson"><span class="uppercase-t">T</span>hompson</div>
       </div> 
-        <button class="work-button">See My Work</button>
+        <div class="button-and-icons">
+          <a href="#portfolio"><button  class="work-button">Check Out My Work</button></a>
+          <div class="div-icons">
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
       </div>
         <p class="below-name">Front-end Developer</p>
       
@@ -316,10 +352,13 @@
       </div>
     </section>
 
+
+    
+
       <section class="skills-section">
-        <div class="skills-icons">
-          <img class="icon" src="images/csshtmljslogo.png" alt="">
-        </div>
+      <i class="fa-brands fa-html5"></i>
+      <i class="fa-brands fa-css3-alt"></i>
+      <i class="fa-brands fa-js"></i>
       </section>
   
    
@@ -358,6 +397,6 @@
   </section>
 
   <!-- Footer Section-->
-  <footer>Raimer Thompson	&copy; 2023</footer>
+  <footer>Raimer Thompson	&copy; 2023 </footer>
 </body>
 </html>
