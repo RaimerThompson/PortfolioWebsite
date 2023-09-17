@@ -1,0 +1,59 @@
+.about {
+  border: 1px solid red ;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 5px dotted aqua;
+  
+}
+
+.about__image-content {
+  border: 5px dotted red;
+
+}
+
+.about__image{
+  width: 80rem;
+  border-radius: 3rem;
+}
+
+.skills__content {
+  display: grid;
+  gap: 1em;
+}
+
+.skills__btn-container{
+  display: flex;
+  gap: 1em;
+}
+
+.skills__btn {
+  background-color: black;
+  color: rgb(241, 241, 241);
+  border-radius: 1rem;
+  padding: 3px 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .8);
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* Lg */
+/* @media (min-width: 1024px) {} */
+
+/* xL */
+/* @media (min-width: 1288px) {} */
+
+/* 2xL */
+/* @media (min-width: 1536px) {}   */
