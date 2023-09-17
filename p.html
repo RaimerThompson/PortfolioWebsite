@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Karla:wght@400;500;600;700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Raimer - Thompson - Portfolio Website</title>
+  <script src="https://kit.fontawesome.com/c339e0fb63.js" crossorigin="anonymous"></script>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family:  'Karla', sans-serif;
+      box-sizing: border-box;
+      line-height: 40x;
+    }
+
+    main{
+    
+    }
+
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      width: 100wv;
+      padding: 20px 10%;
+      top: 0;
+      left: 0;
+    }
+
+    .nav-tabs, .nav-tabs-links, .nav-links{
+      display: flex;
+      list-style-type: none;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      font-weight: 500;
+    }
+
+    .nav-tabs-links::after {
+      content: '';
+      width: 0%;
+      height: 6px;
+      background: rgb(167, 60, 115);
+      position: absolute;
+      left: 0 ;
+      bottom: -6px;
+      transition: .4s;
+    }
+
+    .nav-tabs-links:hover::after{
+      width: 50%;
+    }
+
+    .nav-links{
+      gap: 10px;
+    }
+
+    .nav-icons{
+      display: flex;
+      align-items: center;
+      flex: 1;
+    }
+
+    .in-icon{
+      height: 1rem;
+    }
+
+    .git-icon{
+      height: 4rem;
+    }
+
+    .git-icon:hover, .in-icon:hover{
+      cursor: pointer;
+      opacity: .4;
+    }
+
+    .git-icon:active, .in-icon:active{
+      opacity: .1;
+      }
+
+    #home {
+      margin-top: 50px;
+      margin-bottom: 0px;
+    }
+
+    .name{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .name-button-container{
+      display: flex;
+    }
+
+    .name-raimer, .name-thompson{
+      font-size: 6rem;
+      color: black;
+      font-family: 'Outfit', 'san-sarif';
+      font-weight: 600;
+      width: fit-content;
+
+    }
+
+    .name-raimer{
+      margin-bottom: -80px;
+    }
+
+    .name-thompson {
+      margin-left: 80px;
+    }
+    
+    .uppercase-r, .uppercase-t{
+      color: rgb(167, 60, 115);
+      font-size: 10.5rem;
+      margin-right: -5px;
+    }
+
+    .uppercase-t{
+      margin-right: -20px;
+      color: rgb(167, 60, 115);
+      
+    }
+
+    .below-name{
+      font-size: 1.5rem;
+      margin-left: 240px;
+      color: rgb(84, 83, 83);
+    }
+
+    .above-name {
+      font-size: 1.2rem;
+      color: rgb(84, 83, 83);
+      font-weight: 500;
+      margin-bottom: -30px;
+    }
+
+    .hero-section{
+      display: flex;
+      justify-content: center;
+    }
+
+    .button-and-icons{
+      display:flx ;
+    }
+
+    .work-button{
+      background-color: inherit;
+      border: solid .5px rgb(167, 60, 115);;
+      border-radius: 10px;
+      width: fit-content;
+      height: fit-content;
+      padding: 10px;
+      box-shadow: 2px 1px 2px 1px rgba(206, 206, 206, 0.9);
+      cursor: pointer;
+      position: relative;
+    }
+
+    .work-button:hover{
+      background-color:  rgb(167, 60, 115);
+      color: white;
+      border-radius: 10px;
+      width: fit-content;
+      height: fit-content;
+      padding: 10px;
+      box-shadow: 2px 1px 2px 1px rgba(206, 206, 206, 0.9);
+      cursor: pointer;
+      position: relative;
+    }
+
+    .fa-github:hover, .fa-linkedin-in:hover{
+      color:  rgb(167, 60, 115);
+      cursor: pointer;
+    }
+
+    .fa-github:active, .fa-linkedin-in:active{
+     opacity: .5; 
+    }
+
+    .about-me-container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .about-me-text{
+      font-size: 1rem;
+      font-weight: normal;
+      margin-top: 15px;
+      max-width: 500px;
+    }
+
+    #about h2::after{
+      content: '';
+      background-color: aqua;
+      height: 2px;
+      width: 20%;
+    }
+
+    .raimer1-pic{
+      height: 17rem;
+      border-radius: 20px;
+    }
+
+    .icon{
+      height: 2.5rem;
+    }
+
+    .skills-section{
+      padding: 0px 10%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    footer{
+      position: relative;
+      bottom: 0;
+      font-size: .7rem;
+      margin-top: 2rem;
+    }
+
+    .work-container{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .work-portfolio {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    }
+
+    #contact{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #porfolio
+
+    .div-contact{
+      gap: 10px;
+    }
+
+    input{
+      display: block;
+    }
+
+    textarea{
+      font-family: 'Karla', sans-serif;
+      font-size: .9rem;
+      display: block;
+    }
+
+    .submit-button{
+      background-color:  rgb(167, 60, 115);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      width: 100px;
+      padding: 10px;
+      box-shadow: 2px 1px 2px 1px rgba(206, 206, 206, 0.9);
+      cursor: pointer;
+    }
+
+    #about, #portfolio{
+      background-color: rgb(248, 248, 248);
+    }
+
+    .submit-button:active {
+      opacity: .85;
+    }
+
+    #about, #portfolio,#contact, #home {
+      margin-bottom: 50px;
+      align-items: center;
+      padding: 0px 10%;
+    }
+
+    footer{
+      display: flex;
+      justify-content: center;
+    }
+
+  </style>
+</head>
+<body>
+<!-- Header Section-->  
+  <header>
+    <nav>
+      <div class="nav-icons">
+        <img class="git-icon" src="images/github.png" alt="">
+        <img class="in-icon" src="images/linkin.png" alt="">
+      </div>
+      <ul class="nav-links">
+        <li class="nav-tabs">
+          <a class="nav-tabs-links" href="#home">Home</a></li>
+        <li class="nav-tabs">
+          <a class="nav-tabs-links" href="#about">About</a></li>
+        <li class="nav-tabs">
+          <a class="nav-tabs-links" href="#portfolio">Portfolio</a></li>
+        <li class="nav-tabs"><a class="nav-tabs-links" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section id="home">
+      <h1 class="above-name">Welcome I'm </h1>
+      <div class="name-button-container">
+      <div class="name">
+        <div class="name-raimer"><span class="uppercase-r">R</span>aimer</div> 
+        <div class="name-thompson"><span class="uppercase-t">T</span>hompson</div>
+      </div> 
+        <div class="button-and-icons">
+          <a href="#portfolio"><button  class="work-button">Check Out My Work</button></a>
+          <div class="div-icons">
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+        <p class="below-name">Front-end Developer</p>
+      
+
+        
+    </section>
+  </main>
+
+    
+  <!-- About Me Section-->
+    <section id="about">
+      <h2 >ABOUT ME</h2>
+      <div class="about-me-container">
+          <p class="about-me-text"> You can call me Ray. Catch me building websites and web apps from scratch. A true sports enthusiast with a love for travel and an occasional adrenaline adventure seeker. My journey in code ..... allowed me to implement my .... Developer devoted to crafting beautiful web experiences focused on simplicity and purpose....,  
+          </p>
+        
+        <img class="raimer1-pic" src="images/Raimer1.jpg" alt="">
+      </div>
+    </section>
+
+
+    
+
+      <section class="skills-section">
+      <i class="fa-brands fa-html5"></i>
+      <i class="fa-brands fa-css3-alt"></i>
+      <i class="fa-brands fa-js"></i>
+      </section>
+  
+   
+
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h2 class="portfolio-title">PORTFOLIO</h2>
+    <div class="work-container">
+      <div class="work-portfolio">
+        <div class="work-title">Title</div>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
+          </div>
+      </div>
+      <div class="work-portfolio">
+        <div class="work-title">Title</div>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
+          </div>
+      </div>
+      <div class="work-portfolio">
+        <div class="work-title">Title</div>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, nihil quos ratione animi maxime aliquid fugiat delectus dolores sit? Ducimus, dignissimos sunt blanditiis maxime ad harum qui velit illum!
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>CONTACT ME</h2>
+    <div class="div-contact">
+      <input type="text" name="" id="" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea name="" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+      <button class="submit-button">Submit</button>
+    </div> 
+  </section>
+
+  <!-- Footer Section-->
+  <footer>Raimer Thompson	&copy; 2023 </footer>
+</body>
+</html>

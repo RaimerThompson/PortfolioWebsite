@@ -1,0 +1,74 @@
+.header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+nav {
+  display:flex; 
+  justify-content: space-between;
+}
+
+.header__logo {
+  text-decoration: none;
+  font-weight: 900;
+  color: black;
+  font-size: var(--size-3xl);
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  gap: 1.5em;
+}
+
+.header__link {
+  text-decoration: none;
+  color: rgb(75, 75, 75);
+  font-weight: 400;
+  position: relative;
+  opacity: .9;
+}
+
+.header__link::after {
+  content: '';
+  width: 0%;
+  height: 6px;
+  background: black;
+  position: absolute;
+  left: 0 ;
+  bottom: -7px;
+  transition: .4s;
+}
+
+.header__link:hover::after{
+  width: 20%;
+}
+
+.header__link:hover {
+  color: black;
+  font-weight: 900;
+  transition : .3s;
+}
+
+background: rgb(167, 60, 115);
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* Lg */
+/* @media (min-width: 1024px) {} */
+
+/* xL */
+/* @media (min-width: 1288px) {} */
+
+/* 2xL */
+/* @media (min-width: 1536px) {}   */

@@ -1,0 +1,192 @@
+.hero {
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: relative;
+bottom: 2rem;
+flex-direction: column;
+gap: 2em;
+}
+
+.hero__main {
+  display: flex;
+  flex-direction: column;
+  gap: .8em;  
+}
+
+.hero__introduction {
+  margin-bottom: 10px;
+}
+
+.hero__introduction,
+.hero__description { 
+  font-size: var(--size-xl);
+  color:  rgb(80, 80, 80);
+}
+
+.hero__description {
+  margin-left: 6.5em;
+}
+
+.hero__firstname,
+.hero__lastname {
+  font-weight: 500;
+  font-size: var(--size-8xl);
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+.hero__lastname {
+  position: relative;
+  left: 1rem;
+}
+
+.hero__big-letter {
+  font-size: var(--size-10xl);
+  font-weight: 900;
+}
+
+.hero__rightside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.hero__work-link {
+  text-decoration: none;
+  color:  rgb(80, 80, 80);
+  font-weight: 400;
+  position: relative;
+  opacity: .9;
+}
+
+.hero__work-link:hover {
+  color: black;
+  opacity: 1;
+  font-weight: 900;
+}
+
+.hero__work-link::after {
+  content: '';
+  position: absolute;
+  border: 1px solid black;
+  width: 100%;
+  height: 5px;
+  left: 0;
+  bottom: -15px;
+}
+
+.hero__work-link:hover::after {
+  content: '';
+  position: absolute;
+  background-color: black;
+  border: 1px solid black;
+  width: 100%;
+  height: 5px;
+  left: 0;
+  bottom: -15px;
+  top: 33px;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .hero {
+    bottom: 2rem;
+    flex-direction: column;
+    gap: 2em;
+    }
+
+  .hero__lastname {
+    left: 2rem;
+  }
+
+  .hero__work-link::after {
+    content: '';
+    position: absolute;
+    border: 1px solid black;
+    width: 100%;
+    height: .1px;
+    left: 0;
+    bottom: 25px;
+   
+  }
+
+  .hero__work-link:hover::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    border: 1px solid black;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: -4.5px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .hero {
+    flex-direction: row;
+  }
+  .hero__lastname {
+    left: 2rem;
+  }
+
+  .hero__work-link::after {
+    content: '';
+    position: absolute;
+    border: 1px solid black;
+    width: .1%;
+    height: 50px;
+    left: -20px;
+    bottom: -15px;
+  }
+  
+  .hero__work-link:hover::after{
+    content: '';
+    position: absolute;
+    border: 2px solid black;
+    width: 1%;
+    height: 50px;
+    left: -17.5px;
+    bottom: -15px;
+    top: -15px;
+  }
+  
+  .hero__description {
+    margin-left: 9.5em;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .hero__lastname {
+    left: 7rem;
+  }
+
+  .hero__description {
+    margin-left: 13.5em;
+  }
+}
+
+/* Lg */
+@media (min-width: 1024px) {
+  .hero {
+    bottom: 7rem;
+    }
+  .hero__lastname {
+    left: 7rem;
+  }
+
+  
+}
+
+/* xL */
+@media (min-width: 1288px) {
+  .hero__lastname {
+    left: 7rem;
+  }
+}
+
+/* 2xL */
+/* @media (min-width: 1536px) {}   */
