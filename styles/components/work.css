@@ -1,29 +1,121 @@
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-.work__description {
-  margin-bottom: 1rem;
+.work__container1,
+.work__container2,
+.work__container3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.work__title {
+  margin-bottom: 1.7rem;
+}
+
+.work__subtitle {
+  margin-bottom: 1.5rem;
 }
 
 .work__image {
   max-width: 20rem;
+  max-height: 22rem;
   margin-bottom: 2rem;
 }
 
-.work__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.work__image-wrapper {
+  align-self: center;
+}
+
+.work__description {
+  margin-bottom: 5rem;
+  color: rgb(80, 80, 80);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* xs */
 /* @media (min-width: 475px) {} */
 
 /* sm */
-/* @media (min-width: 640px) {} */
+@media (min-width: 640px) {
+  .work {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    }
+    
+    .work__container1,
+    .work__container2,
+    .work__container3 {
+      border: 2px dotted aqua;
+      display: flex;
+      flex-direction: row;
+      gap: 2em;
+      justify-content: space-between;
+    }
+    
+    .work__container2 {
+      flex-direction: row-reverse;
+    }
+
+    .work__title {
+      margin-bottom: 1.7rem;
+    }
+
+    .work__subtitle {
+      margin-bottom: 1.5rem;
+    }
+
+    
+    .work__image {
+      max-width: 20rem;
+      max-height: 22rem;
+      margin-bottom: 2rem;
+    }
+    
+    .work__image-wrapper {
+      border: 2px dotted rgb(119, 0, 128);
+      
+    }
+    
+    .work__text {
+      border: 2px dotted green;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    
+    .work__description {
+      margin-bottom: 5rem;
+      color: blue;
+    }
+}
 
 /* md */
-/* @media (min-width: 768px) {} */
+@media (min-width: 768px) {
+  .work__text {
+    justify-content: center;
+  }
+}
 
 /* Lg */
-/* @media (min-width: 1024px) {} */
+@media (min-width: 1024px) {
+  .work__text {
+    justify-content: center;
+    max-width: 50%;
+  }
+
+  .work__container1,
+  .work__container2,
+  .work__container3 {
+    justify-content: space-around;
+    }
+}
 
 /* xL */
 /* @media (min-width: 1288px) {} */

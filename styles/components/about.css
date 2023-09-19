@@ -15,11 +15,6 @@
   gap: 2em;
 }
 
-.about__title,
-.skills__title{
- 
-}
-
 .about__content {
   display: inline-block;
   gap: 1rem;
@@ -28,9 +23,11 @@
   flex-wrap: wrap;
 }
 
+
 .about__description {
   max-width: 350px;
   margin-top: 1rem;
+  color: rgb(80, 80, 80);
 }
 
 .about__image{
@@ -57,10 +54,11 @@
 .skills__btn {
   margin-top: 1.5rem;
   background-color: black;
-  color: rgb(241, 241, 241);
+  color: white;
   border-radius: 1rem;
   padding: 3px 10px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .8);
+  transition: all .1s cubic-bezier(.075,.82,.165,1);
+  box-shadow: 5px 5px 31px -10px rgb(245, 1, 1);
   cursor: default;
 }
 
@@ -117,7 +115,8 @@
     color: rgb(241, 241, 241);
     border-radius: 1rem;
     padding: 3px 10px;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .8);
+    transition: all .1s cubic-bezier(.075,.82,.165,1);
+    box-shadow: 5px 5px 31px -10px rgb(255, 84, 84);;
     cursor: default;
   }
 }

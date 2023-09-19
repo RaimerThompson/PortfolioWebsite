@@ -59,7 +59,8 @@ nav {
   color: rgb(255, 84, 84);
   transition : .25s;
   opacity: .9;
-  font-weight: 900;}
+  font-weight: 900;
+}
 
 /* xs */
 @media (min-width: 475px) {

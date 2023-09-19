@@ -63,15 +63,18 @@ gap: 2em;
 .hero__red-i::before{
   color: rgb(255, 84, 84);
   clip: rect(auto,auto, .4em, auto);
+  
 }
 
 .hero__red-i::after {
   clip: rect(.4em, auto, auto, auto);
+  
 }
 
 .hero__red-i i{
   font: inherit;
   opacity: 0;
+  
 }
 
 .hero__rightside {
@@ -90,6 +93,8 @@ gap: 2em;
   position: relative;
   opacity: .9;
   border-radius: 8px;
+  transition: all .1s cubic-bezier(.075,.82,.165,1);
+  box-shadow: 5px 5px 31px -10px #ff0000;
 }
 
 .hero__work-link button{
