@@ -1,0 +1,32 @@
+
+.work__description {
+  margin-bottom: 1rem;
+}
+
+.work__image {
+  max-width: 20rem;
+  margin-bottom: 2rem;
+}
+
+.work__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* Lg */
+/* @media (min-width: 1024px) {} */
+
+/* xL */
+/* @media (min-width: 1288px) {} */
+
+/* 2xL */
+/* @media (min-width: 1536px) {}   */
