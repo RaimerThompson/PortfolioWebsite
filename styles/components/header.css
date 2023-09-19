@@ -12,8 +12,16 @@ nav {
   text-decoration: none;
   font-weight: 900;
   color: black;
-  font-size: var(--size-3xl);
+  font-size: var(--size-xl);
   font-family: 'Nothing You Could Do', cursive;
+  position: relative;
+  top: 4px;
+}
+
+
+.header__logo-dot {
+  color:rgb(255, 84, 84);
+  opacity: .9;
 }
 
 .header__menu {
@@ -26,7 +34,7 @@ nav {
 
 .header__link {
   text-decoration: none;
-  color: rgb(75, 75, 75);
+  color: rgb(80, 80, 80);
   font-weight: 400;
   position: relative;
   opacity: .9;
@@ -35,8 +43,8 @@ nav {
 .header__link::after {
   content: '';
   width: 0%;
-  height: 6px;
-  background: black;
+  height: 1.7px;
+  background: rgb(0, 0, 0);
   position: absolute;
   left: 0 ;
   bottom: -7px;
@@ -48,13 +56,20 @@ nav {
 }
 
 .header__link:hover {
-  color: black;
-  font-weight: 900;
-  transition : .3s;
-}
+  color: rgb(255, 84, 84);
+  transition : .25s;
+  opacity: .9;
+  font-weight: 900;}
 
 /* xs */
-/* @media (min-width: 475px) {} */
+@media (min-width: 475px) {
+  .header__logo {
+    font-size: var(--size-xl);
+    position: relative;
+    top: 4.5px;
+  }
+  
+}
 
 /* sm */
 /* @media (min-width: 640px) {} */
