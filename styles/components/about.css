@@ -15,6 +15,11 @@
   gap: 2em;
 }
 
+.about__title span{
+  border-bottom: 3px solid rgb(255, 73, 73);
+  padding-bottom: 3px;
+}
+
 .about__content {
   display: inline-block;
   gap: 1rem;
@@ -38,6 +43,11 @@
  
 }
 
+.skills__title span{
+  border-bottom: 3px solid rgb(255, 73, 73);
+  padding-bottom: 3px;
+}
+
 .skills__content {
   display: inline-block;
   gap: 1em;
@@ -53,7 +63,7 @@
 
 .skills__btn {
   margin-top: 1.5rem;
-  background-color: black;
+  background-color: rgb(30, 30, 30);
   color: white;
   border-radius: .3rem;
   padding: 3px 10px;

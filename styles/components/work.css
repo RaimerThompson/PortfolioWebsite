@@ -17,6 +17,11 @@
   margin-bottom: 1.7rem;
 }
 
+.work__title span{
+  border-bottom: 3px solid rgb(255, 73, 73);
+  padding-bottom: 3px;
+}
+
 .work__subtitle {
   margin-bottom: 1.5rem;
 }
