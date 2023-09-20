@@ -99,11 +99,11 @@ gap: 2em;
 
 .hero__work-link button{
   font-weight: 600 ;
-  font-size: var(--size-reg);
+  font-size: var(--size-sm);
 }
 
 .hero__work-link:hover {
-  opacity: .9
+  opacity: .75;
 }
 
 .hero__work-link::after {
@@ -118,7 +118,6 @@ gap: 2em;
 }
 
 
-
 /* xs */
 @media (min-width: 475px) {
   .hero {
@@ -129,10 +128,6 @@ gap: 2em;
 
   .hero__lastname {
     left: 0rem;
-  }
-  
-  .hero__work-link button{
-    font-size: var(--size-sm);
   }
   
 }
@@ -153,10 +148,6 @@ gap: 2em;
     left: 5px;
     top: 5px;
     border-radius: 8px;
-  }
-  
-  .hero__work-link button{
-    font-size: var(--size-xs);
   }
   
   .hero__description {
