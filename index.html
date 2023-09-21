@@ -67,11 +67,11 @@
       
       <div class="about__skills-container">
         <div class="about__content">
-          <h2 class="about__title"><span>A</span>BOUT ME</h2>
+          <h2 class="about__title">ABOUT ME</h2>
           <p class="about__description">You can call me Ray. Catch me building websites and web apps from scratch. A true sports enthusiast with a love for travel and an occasional adrenaline adventure seeker. My journey in code ..... allowed me to implement my .... Developer devoted to crafting beautiful web experiences focused on simplicity and purpose....,</p>
         </div>
           <div class="skills__content">
-            <h2 class="skills__title"><span>S</span>KILLS</h2>
+            <h2 class="skills__title">SKILLS</h2>
             <div class="skills__btn-container">
               <button class="skills__btn">HTML</button>
               <button class="skills__btn">CSS</button>
@@ -89,42 +89,65 @@
 
     <!-- Projects Start-->
     <section id="work" class="work container section">
-      <h2 class="work__title"><span>P</span>ROJECTS</h2>
+      <h2 class="work__title">PROJECTS</h2>
       <div class="work__container1">
         <!-- Project 1-->
         <div class="work__image-wrapper work__image1">
           <img class="work__image" src="images/gracefulvidablog.jpg" alt="">
         </div>
         <div class="work__text work__content1">
-          <h3 class="work__subtitle">p1</h3>
+          <h3 class="work__subtitle">Wedding Portfolio Page</h3>
           <p class="work__description">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga reiciendis quae tempore aperiam voluptas similique quis quibusdam cumque dolore iure neque aliquid, quo dolores ab officiis. Fuga, libero quasi. Ad labore quos voluptas soluta cum nesciunt reiciendis dolor nobis, saepe quisquam sit. Officia dicta cum vitae consequuntur doloribus eum ratione?
-          </p>   
+          </p>
+          <div class="work__demo-icons">
+            <div class="icons__left"><i class="fa-sharp fa-solid fa-desktop"></i>
+            <p>Live Demo</p></div>
+            <li></li>
+            <div class="icons__right"><i class="fa-brands fa-github"></i>
+            <p>Github</p></div>
+            
+          </div>
         </div>
       </div>
       <!-- Project 2-->
       <div class="work__container2">
         <div class="work__image-wrapper work__image2">
-          <img class="work__image" src="images/gracefulvidablog.jpg" alt="">
+          <img class="work__image" src="images/GG-placeholder.jpg" alt="">
         </div>
         <div class="work__text work__content2">
-          <h3 class="work__subtitle">p2</h3>
+          <h3 class="work__subtitle">Client GG Website</h3>
           <p class="work__description">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga reiciendis quae tempore aperiam voluptas similique quis quibusdam cumque dolore iure neque aliquid, quo dolores ab officiis. Fuga, libero quasi. Ad labore quos voluptas soluta cum nesciunt reiciendis dolor nobis, saepe quisquam sit. Officia dicta cum vitae consequuntur doloribus eum ratione?
           </p>   
+          <div class="work__demo-icons">
+            <div class="icons__left"><i class="fa-sharp fa-solid fa-desktop"></i>
+            <p>Live Demo</p></div>
+            <li></li>
+            <div class="icons__right"><i class="fa-brands fa-github"></i>
+            <p>Github</p></div>
+          </div>
         </div>
       </div>
 
       <!-- Project 3-->
       <div class="work__container3">
         <div class="work__image-wrapper work__image3">
-          <img class="work__image" src="images/gracefulvidablog.jpg" alt="">
+          <img class="work__image" src="images/Timbs-Ad.jpg" alt="">
         </div>
         <div class="work__text work__content3">
-          <h3 class="work__subtitle">p3</h3>
+          <h3 class="work__subtitle">Sneaks 4 Geeks</h3>
           <p class="work__description">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga reiciendis quae tempore aperiam voluptas similique quis quibusdam cumque dolore iure neque aliquid, quo dolores ab officiis. Fuga, libero quasi. Ad labore quos voluptas soluta cum nesciunt reiciendis dolor nobis, saepe quisquam sit. Officia dicta cum vitae consequuntur doloribus eum ratione?
           </p>   
+          <div class="work__demo-icons">
+            <div class="icons__left"><i class="fa-sharp fa-solid fa-desktop"></i>
+            <p>Live Demo</p></div>
+            <li></li>
+            <div class="icons__right"><i class="fa-brands fa-github">
+            </i>
+            <p>Github</p></div>
+          </div>
         </div>
       </div>
        
@@ -134,16 +157,28 @@
     <!-- Contact Starts-->
     <section id="contact" class="contact section">
       <div class="contact__container">
-        <div class="contact__heading-container">
-          <h2 class="contact__left"><span>STAY IN TOUCH</span></h2>
-          <p><i class="fa-regular fa-paper-plane"></i>rthomp22@gmail.com</p>
-          <p><i class="fa-brands fa-linkedin-in"></i><i class="fa-brands fa-github"></i><i class="fa-brands fa-x-twitter"></i></p>
+        <div class="contact__left">
+          <h2 class="contact__title"><span>CONTACT ME</span></h2>
+          <p class="contact__email"><i class="fa-regular fa-paper-plane"> </i><span class="span__email">rthomp22@gmail.com</span></p>
+          <div class="contact__social-icons">
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+          <div class="contact__left-resume">
+            <button class="contact__resume-button" ><a href="images/Raimer1.jpg" download ><i class="fa-solid fa-cloud-arrow-down"></i>Resume</a></button>
+          </div>
         </div>
+
         <div class="contact__right">
-          <input type="text" name="" id="" placeholder="Your Name">
-          <input type="email" placeholder="Your Email">
-          <textarea name="" id="" rows="6" placeholder="Your Message"></textarea>
-          <button class="contact__submit-button">Submit</button></div>
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" id="" placeholder="Your Name">
+            <input type="email" name="Email" placeholder="Your Email">
+            <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="contact__submit-button">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
         
       </div>
       
@@ -153,5 +188,24 @@
    <footer class="footer">
       <p>coded by Raimer Thompson <span>&copy;</span> 2023 </p>
     </footer>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwImskf7mgevTD4jjt860OgE5SQZoAIXSGmYfrI9ILV46popBIwp-l8z-v7zMcTnSet/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Success!!! Your message has been sent"
+            setTimeout (function (){
+              msg.innerHTML = ""
+            }, 4000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
 </body>
 </html>

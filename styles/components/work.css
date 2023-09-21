@@ -13,13 +13,13 @@
   text-align: center;
 }
 
-.work__title {
-  margin-bottom: 1.7rem;
+.work__container1,
+.work__container2{
+  margin-bottom: 5rem;
 }
 
-.work__title span{
-  border-bottom: 3px solid rgb(255, 73, 73);
-  padding-bottom: 3px;
+.work__title {
+  margin-bottom: 1.7rem;
 }
 
 .work__subtitle {
@@ -30,6 +30,7 @@
   max-width: 20rem;
   max-height: 22rem;
   margin-bottom: 2rem;
+  border: 1px solid rgba(80, 80, 80, .2);
 }
 
 .work__image-wrapper {
@@ -37,12 +38,41 @@
 }
 
 .work__description {
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   color: rgb(80, 80, 80);
   display: flex;
   flex-wrap: wrap;
   max-width: 40ch;
 }
+
+.work__demo-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: var(--size-sm);
+  border: .1px solid rgba(229, 227, 227, .5);
+}
+
+.work__demo-icons li{
+  list-style: none;
+  border: 1px solid rgba(229, 227, 227, .5);;
+  padding-top: 1.5em;
+
+}
+
+.icons__left:hover,
+.icons__right:hover{
+  color: rgba(255, 73, 73, .8);
+  cursor: pointer;
+}
+
+.fa-github:hover,
+.fa-desktop:hover {
+color: rgba(255, 73, 73, .8);
+}
+
+
 
 /* xs */
 /* @media (min-width: 475px) {} */
@@ -89,8 +119,8 @@
   }
   
   .work__description {
-    margin-bottom: 5rem;
-    color: blue;
+    margin-bottom: 1rem;
+    color: rgb(80, 80, 80);
     display: flex;
     max-width: 30ch;
   }

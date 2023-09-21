@@ -15,11 +15,6 @@
   gap: 2em;
 }
 
-.about__title span{
-  border-bottom: 3px solid rgb(255, 73, 73);
-  padding-bottom: 3px;
-}
-
 .about__content {
   display: inline-block;
   gap: 1rem;
@@ -38,14 +33,9 @@
 .about__image{
   width: 60rem;
   max-width: 17rem;
-  border-radius: 3rem;
+  border-radius: 12px;
   box-shadow: 1px 1px 1px 1px rgba(229, 229, 229, 0.8);
  
-}
-
-.skills__title span{
-  border-bottom: 3px solid rgb(255, 73, 73);
-  padding-bottom: 3px;
 }
 
 .skills__content {
@@ -106,7 +96,7 @@
   .about__image{
     width: 80rem;
     max-width: 20rem;
-    border-radius: 3rem;
+    border-radius: 12px;
     box-shadow: 1px 1px 1px 1px rgba(229, 229, 229, 0.8);
   }
   
@@ -121,9 +111,9 @@
   }
   
   .skills__btn {
-    background-color: black;
+    background-color: rgb(40, 40, 40);
     color: rgb(241, 241, 241);
-    border-radius: 1rem;
+    border-radius: .3rem;
     padding: 3px 10px;
     transition: all .1s cubic-bezier(.075,.82,.165,1);
     box-shadow: 5px 5px 31px -10px rgb(255, 84, 84);;
