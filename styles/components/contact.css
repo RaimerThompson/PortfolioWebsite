@@ -74,11 +74,17 @@ form input, form textarea{
   color: rgba(255, 73, 73, .9);
   margin-right: 15px;
   margin-left: -10px;
-  transition: transform .9s;
+  transition: transform .9s all ease;
+  z-index: -100;
 }
 
-.fa-paper-plane:hover{
-  transform: translatex(10px);
+.contact__email{
+  display: flex;
+}
+
+.contact__email:hover .fa-paper-plane{
+  cursor: grabbing;
+  animation: slideUpAndRight 2s ease-in-out forwards;
 }
 
 .contact__social-icons {
@@ -142,7 +148,7 @@ margin-right: 5px;
 }
 
 .contact__submit-button:active{
-  transform: translateY(5px);
+  transform: translateY(6px);
 }
 
 #msg {
@@ -151,7 +157,6 @@ margin-right: 5px;
   display: block;
   font-size: var(--size-xs);
 }
-
 
 /* xs */
 /* @media (min-width: 475px) {} */

@@ -27,14 +27,23 @@
 }
 
 .work__image {
-  max-width: 20rem;
-  max-height: 22rem;
+  width: 100%;
   margin-bottom: 2rem;
+  overflow: hidden;
+  border: 1px solid rgba(80, 80, 80, .2);
+  transition: transform 500ms ease-in-out;
+}
+
+.work__image:hover {
+  transform: scale(1.2);
   border: 1px solid rgba(80, 80, 80, .2);
 }
 
 .work__image-wrapper {
   align-self: center;
+  width: 20rem;
+  height: 22rem;
+  overflow: hidden;
 }
 
 .work__description {
@@ -72,6 +81,10 @@
 color: rgba(255, 73, 73, .8);
 }
 
+.fa-github:active,
+.fa-desktop:active {
+color: rgba(255, 73, 73, .3);
+}
 
 
 /* xs */

@@ -110,32 +110,9 @@ gap: 2em;
 .hero__work-link:hover:active{
   /* animation: slideBack 700ms backwards; */
   padding: 3px;
-  transition: 200ms;
+  transition: all 2000ms ease;
 }
 
-@keyframes slideDiagonally {
-  
-  0% { 
-    transform: translateY(-5px);
-    
-  }
-
-  100% {
-    transform: translateX(5px);
-  }
-}
-
-@keyframes slideBack {
-  
-  0% { 
-    transform: translateX(-5px);
-    
-  }
-
-  100% {
-    transform: translateY(5px);
-  }
-}
 
 .hero__work-link::after {
   content: '';

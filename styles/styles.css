@@ -48,3 +48,34 @@ button {
  --size-9xl: 8rem;
  --size-10xl: 10rem;
 }
+
+
+@keyframes slideUpAndRight {
+  
+  0% { 
+    transform: translate(0, 0);
+   
+  }
+
+  /* 40% {transform: translate(15px, 0);} */
+
+  60% {
+    transform: translate(30px, -30px);
+  }
+  100% {
+    transform: translate(150px, -30px);
+  }
+}
+
+@keyframes slideDiagonally {
+  
+  0% { 
+    transform: translate(0, 0);
+    
+  }
+
+  100% {
+    transform: translate(12px, 10px);
+  }
+}
+
