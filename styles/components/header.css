@@ -62,6 +62,62 @@ nav {
   font-weight: 900;
 }
 
+.header__menu-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  
+}
+
+.hamburger__button{
+  width: 20px;
+  height: 3px;
+  background: rgb(50, 50, 50);
+  border-radius: 2px;
+  transition: all .1s ease-in-out;
+}
+
+.hamburger__button::before,
+.hamburger__button::after{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background: rgb(50, 50, 50);
+  border-radius: 2px;
+  transition: all .3s ease-in-out;
+}
+
+.hamburger__button::before{
+  transform: translateY(10px);
+}
+
+.hamburger__button::after{
+  transform: translateY(-10px);
+}
+
+/* Animation */
+.header__menu-button.open .hamburger__button{
+  transform: translateX(-20px);
+  background: transparent;
+}
+
+.header__menu-button.open .hamburger__button::before{
+transform: rotate(-45deg) translate(14.5px, 14.5px);
+background: rgba(255, 84, 84, .9);
+}
+
+.header__menu-button.open .hamburger__button::after{
+  transform: rotate(45deg) translate(14.5px, -14.5px);
+  background: rgba(255, 84, 84, .9);
+}
+
+
 /* xs */
 @media (min-width: 475px) {
   .header__logo {

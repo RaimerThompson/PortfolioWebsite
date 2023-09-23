@@ -38,7 +38,10 @@
         <li>
           <a class="header__link" href="#contact">Contact</a>
         </li>
-      </ul
+      </ul>
+      <div class="header__menu-button">
+        <div class="hamburger__button"></div>
+      </div>
     </nav>
   </header>
 <!-- Header Ends-->
@@ -210,6 +213,38 @@
           })
           .catch(error => console.error('Error!', error.message))
       })
-    </script>
+      
+      </script>
+
+      <script>
+        const sr = ScrollReveal({
+        origin: 'top',
+        distance: '100px',
+        duration: 2500,
+        reset: true,
+      });
+
+      sr.reveal( ".contact", ".about", ".work" {
+        origin:"left",
+      });
+      </script>
+      
+      <script>
+
+        const menuBtn = document.querySelector('.header__menu-button');
+        let menuOpen = false;
+
+        menuBtn.addEventListener('click', () => {
+          if (!menuOpen) {
+            menuBtn.classList.add('open');
+            menuOpen = true;
+           }else {
+            menuBtn.classList.remove('open');
+            menuOpen = false;
+           }
+        })
+
+      </script>
+    
 </body>
 </html>
