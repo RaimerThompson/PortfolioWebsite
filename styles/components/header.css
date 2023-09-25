@@ -15,7 +15,7 @@ nav {
   font-size: var(--size-xl);
   font-family: 'Nothing You Could Do', cursive;
   position: relative;
-  top: 4px;
+  top: 7px;
 }
 
 
@@ -26,18 +26,43 @@ nav {
 
 .header__menu {
   display: flex;
+  flex-direction: column;
   align-items: center;
   list-style: none;
   padding: 0;
-  gap: 1.5em;
+  gap: em;
+}
+
+.header__menu li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+}
+
+.header__link.hamburger__menu-button.open{
+display: flex;
+flex-direction: column;
+}
+
+.hamburger__button{
+  position: absolute;
+  align-self: center;
+  top: 10px;
+  left: 20px;
+  z-index: 10;
 }
 
 .header__link {
+  background: inherit;
+  display: block;
   text-decoration: none;
   color: rgb(80, 80, 80);
   font-weight: 400;
   position: relative;
   opacity: .9;
+  top: 30px;
+  right: -220px;
 }
 
 .header__link::after {
@@ -62,22 +87,21 @@ nav {
   font-weight: 900;
 }
 
-.header__menu-button {
+.hamburger__menu-button {
   position: relative;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
   cursor: pointer;
   transition: all .2s ease-in-out;
-  
 }
 
 .hamburger__button{
   width: 20px;
   height: 3px;
-  background: rgb(50, 50, 50);
+  background: rgb(90, 90, 90);
   border-radius: 2px;
   transition: all .1s ease-in-out;
 }
@@ -88,7 +112,7 @@ nav {
   position: absolute;
   width: 20px;
   height: 3px;
-  background: rgb(50, 50, 50);
+  background: rgb(90, 90, 90);
   border-radius: 2px;
   transition: all .3s ease-in-out;
 }
@@ -102,17 +126,17 @@ nav {
 }
 
 /* Animation */
-.header__menu-button.open .hamburger__button{
+.hamburger__menu-button.open .hamburger__button{
   transform: translateX(-20px);
   background: transparent;
 }
 
-.header__menu-button.open .hamburger__button::before{
+.hamburger__menu-button.open .hamburger__button::before{
 transform: rotate(-45deg) translate(14.5px, 14.5px);
 background: rgba(255, 84, 84, .9);
 }
 
-.header__menu-button.open .hamburger__button::after{
+.hamburger__menu-button.open .hamburger__button::after{
   transform: rotate(45deg) translate(14.5px, -14.5px);
   background: rgba(255, 84, 84, .9);
 }
@@ -123,13 +147,150 @@ background: rgba(255, 84, 84, .9);
   .header__logo {
     font-size: var(--size-xl);
     position: relative;
-    top: 4.5px;
+    top: 7px;
   }
   
 }
 
 /* sm */
-/* @media (min-width: 640px) {} */
+@media (min-width: 640px) {
+
+  .header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  nav {
+    display:flex; 
+    justify-content: space-between;
+  }
+  
+  .header__logo {
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+    font-size: var(--size-xl);
+    font-family: 'Nothing You Could Do', cursive;
+    position: relative;
+    top: 7px;
+  }
+  
+  
+  .header__logo-dot {
+    color:rgb(255, 84, 84);
+    opacity: .9;
+  }
+  
+  .header__menu {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 1.5em;
+  }
+  
+  .header__menu li {
+    display: block;
+    margin: .2rem;
+  }
+  
+  .hamburger__button{
+    position: absolute;
+    align-self: center;
+    top: 10px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  .header__link::after {
+    content: '';
+    width: 0%;
+    height: 1.7px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left: 0 ;
+    bottom: -7px;
+    transition: .4s;
+  }
+  
+  .header__link:hover::after{
+    width: 20%;
+  }
+  
+  .header__link:hover {
+    color: rgb(255, 84, 84);
+    transition: all .2s ease-in-out;
+    opacity: .9;
+    font-weight: 900;
+  }
+  
+  .hamburger__menu-button {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    
+  }
+  
+  .hamburger__button{
+    width: 20px;
+    height: 3px;
+    background: rgb(90, 90, 90);
+    border-radius: 2px;
+    transition: all .1s ease-in-out;
+  }
+  
+  .hamburger__button::before,
+  .hamburger__button::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: rgb(90, 90, 90);
+    border-radius: 2px;
+    transition: all .3s ease-in-out;
+  }
+  
+  .hamburger__button::before{
+    transform: translateY(10px);
+  }
+  
+  .hamburger__button::after{
+    transform: translateY(-10px);
+  }
+  
+  /* Animation */
+  .hamburger__menu-button.open .hamburger__button{
+    transform: translateX(-20px);
+    background: transparent;
+  }
+  
+  .hamburger__menu-button.open .hamburger__button::before{
+  transform: rotate(-45deg) translate(14.5px, 14.5px);
+  background: rgba(255, 84, 84, .9);
+  }
+  
+  .hamburger__menu-button.open .hamburger__button::after{
+    transform: rotate(45deg) translate(14.5px, -14.5px);
+    background: rgba(255, 84, 84, .9);
+  }
+  
+  .header__link {
+    background: inherit;
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+    font-weight: 400;
+    position: relative;
+    opacity: .9;
+    top: inherit;
+    right: inherit;
+  }
+}
 
 /* md */
 /* @media (min-width: 768px) {} */

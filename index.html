@@ -39,13 +39,12 @@
           <a class="header__link" href="#contact">Contact</a>
         </li>
       </ul>
-      <div class="header__menu-button">
+      <div class="hamburger__menu-button">
         <div class="hamburger__button"></div>
       </div>
     </nav>
   </header>
 <!-- Header Ends-->
-
 
 <!-- Hero Starts -->
   <main>
@@ -215,36 +214,52 @@
       })
       
       </script>
-
-      <script>
-        const sr = ScrollReveal({
-        origin: 'top',
-        distance: '100px',
-        duration: 2500,
-        reset: true,
-      });
-
-      sr.reveal( ".contact", ".about", ".work" {
-        origin:"left",
-      });
-      </script>
-      
       <script>
 
-        const menuBtn = document.querySelector('.header__menu-button');
+        const menuBtn = document.querySelector('.hamburger__menu-button');
+        const mobileNav = document.querySelector('.header__menu');
         let menuOpen = false;
 
         menuBtn.addEventListener('click', () => {
           if (!menuOpen) {
             menuBtn.classList.add('open');
             menuOpen = true;
+            mobileNav.style.display = 'block';
            }else {
             menuBtn.classList.remove('open');
             menuOpen = false;
+            mobileNav.style.display = 'none';
            }
         })
 
       </script>
-    
+      <script>
+        const mobileNv = () => {
+  const headerBtn = document.querySelector('.header__menu-button');
+ 
+  const mobileLinks = document.querySelectorAll('.mobile-nav__link');
+
+  // State
+  let isMobileNavOpen = false;
+
+  headerBtn.addEventListener('click', () => {
+    isMobileNavOpen = !isMobileNavOpen;
+    if (isMobileNavOpen) {
+      mobileNav.style.display = 'flex';
+    } else {
+      mobileNav.style.display = 'none';
+    }
+  });
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      isMobileNavOpen = false;
+      mobileNav.style.display = 'none';
+    });
+  });
+};
+
+
+      </script>
 </body>
 </html>

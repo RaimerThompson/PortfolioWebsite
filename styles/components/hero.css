@@ -31,17 +31,17 @@ gap: 2em;
 .hero__firstname,
 .hero__lastname {
   font-weight: 500;
-  font-size: var(--size-8xl);
+  font-size: var(--size-7xl);
   font-family: 'Nothing You Could Do', cursive;
 }
 
 .hero__lastname {
   position: relative;
-  left: 1rem;
+  left: rem;
 }
 
 .hero__big-letter {
-  font-size: var(--size-10xl);
+  font-size: var(--size-9xl);
   font-weight: 900;
 }
 
@@ -164,13 +164,30 @@ gap: 2em;
     top: 5px;
     border-radius: 8px;
   }
-  
+  .hero__firstname,
+  .hero__lastname {
+    font-weight: 500;
+    font-size: var(--size-7xl);
+  }
+  .hero__big-letter {
+    font-size: var(--size-10xl);
+    font-weight: 900;
+  }
 }
 
 /* md */
 @media (min-width: 768px) {
   .hero__lastname {
     left: 2rem;
+  }
+  .hero__firstname,
+  .hero__lastname {
+    font-weight: 500;
+    font-size: var(--size-8xl);
+  }
+  .hero__big-letter {
+    font-size: var(--size-10xl);
+    font-weight: 900;
   }
 
 }
