@@ -31,8 +31,8 @@ gap: 2em;
 .hero__firstname,
 .hero__lastname {
   font-weight: 500;
-  font-size: var(--size-7xl);
-  font-family: 'Nothing You Could Do', cursive;
+  font-size: var(--size-6xl);
+  font-family: 'Lato', sans-serif;
 }
 
 .hero__lastname {
@@ -183,10 +183,10 @@ gap: 2em;
   .hero__firstname,
   .hero__lastname {
     font-weight: 500;
-    font-size: var(--size-8xl);
+    font-size: var(--size-6xl);
   }
   .hero__big-letter {
-    font-size: var(--size-10xl);
+    font-size: var(--size-8xl);
     font-weight: 900;
   }
 

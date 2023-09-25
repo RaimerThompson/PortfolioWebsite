@@ -13,7 +13,7 @@ nav {
   font-weight: 900;
   color: black;
   font-size: var(--size-xl);
-  font-family: 'Nothing You Could Do', cursive;
+  font-family: 'Lato', cursive;
   position: relative;
   top: 7px;
 }
@@ -25,19 +25,21 @@ nav {
 }
 
 .header__menu {
-  display: flex;
-  flex-direction: column;
+  display: none;
   align-items: center;
   list-style: none;
   padding: 0;
-  gap: em;
+  position: absolute;
+  top: 28px;
+  right: 75px;
+  z-index: 2;
 }
 
 .header__menu li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 30px;
+  margin: 10px;
 }
 
 .header__link.hamburger__menu-button.open{
@@ -48,7 +50,7 @@ flex-direction: column;
 .hamburger__button{
   position: absolute;
   align-self: center;
-  top: 10px;
+  top: 15px;
   left: 20px;
   z-index: 10;
 }
@@ -61,8 +63,6 @@ flex-direction: column;
   font-weight: 400;
   position: relative;
   opacity: .9;
-  top: 30px;
-  right: -220px;
 }
 
 .header__link::after {
@@ -82,7 +82,7 @@ flex-direction: column;
 
 .header__link:hover {
   color: rgb(255, 84, 84);
-  transition: all .2s ease-in-out;
+  transition: all .25s ease-in-out;
   opacity: .9;
   font-weight: 900;
 }
@@ -170,7 +170,7 @@ background: rgba(255, 84, 84, .9);
     font-weight: 900;
     color: black;
     font-size: var(--size-xl);
-    font-family: 'Nothing You Could Do', cursive;
+    font-family: 'Lato', sans-serif;
     position: relative;
     top: 7px;
   }
@@ -188,6 +188,11 @@ background: rgba(255, 84, 84, .9);
     list-style: none;
     padding: 0;
     gap: 1.5em;
+    position: relative;
+    top: inherit;
+    right: inherit;
+    width: inherit;
+    padding-top: inherit;
   }
   
   .header__menu li {
