@@ -40,7 +40,7 @@ gap: 2em;
 
 .hero__lastname {
   position: relative;
-  left: rem;
+  /* left: -4rem; */
 }
 
 .hero__big-letter {
@@ -64,7 +64,7 @@ gap: 2em;
 }
 
 .hero__red-i::before{
-  color: rgb(255, 84, 84);
+  /* color: rgb(255, 84, 84); */
   clip: rect(auto,auto, .4em, auto);
   
 }

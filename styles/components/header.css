@@ -100,9 +100,9 @@ flex-direction: column;
 }
 
 .hamburger__button{
-  width: 20px;
-  height: 3px;
-  background: rgb(90, 90, 90);
+  width: 30px;
+  height: 2.5px;
+  background: rgb(70, 70, 70);
   border-radius: 2px;
   transition: all .1s ease-in-out;
 }
@@ -111,9 +111,9 @@ flex-direction: column;
 .hamburger__button::after{
   content: '';
   position: absolute;
-  width: 20px;
-  height: 3px;
-  background: rgb(90, 90, 90);
+  width: 30px;
+  height: 2.5px;
+  background: rgb(70, 70, 70);
   border-radius: 2px;
   transition: all .3s ease-in-out;
 }
@@ -171,7 +171,8 @@ background: rgba(255, 84, 84, .9);
     font-weight: 900;
     color: black;
     font-size: var(--size-xl);
-    font-family: 'Lato', sans-serif;
+  font-family: NY;
+    
     position: relative;
     top: 7px;
   }
