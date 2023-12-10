@@ -78,6 +78,7 @@
               <button class="skills__btn">HTML</button>
               <button class="skills__btn">CSS</button>
               <button class="skills__btn">JAVASCRIPT</button>
+              <button class="skills__btn">WORDPRESS</button>
             </div>
           </div>
         </div>
@@ -140,7 +141,7 @@
         <div class="work__text work__content3">
           <h3 class="work__subtitle">Sneaks 4 Geeks</h3>
           <p class="work__description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga reiciendis quae tempore aperiam voluptas similique quis quibusdam cumque dolore iure neque aliquid, quo dolores ab officiis. Fuga, libero quasi. Ad labore quos voluptas soluta cum nesciunt reiciendis dolor nobis, saepe quisquam sit. Officia dicta cum vitae consequuntur doloribus eum ratione?
+            sneaks 4 geeks staged website created to showcase an ecommerce website with a comedic touch.  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga reiciendis quae tempore aperiam voluptas similique quis quibusdam cumque dolore iure neque aliquid, quo dolores ab officiis. Fuga, libero quasi. Ad labore quos voluptas soluta cum nesciunt reiciendis dolor nobis, saepe quisquam sit. Officia dicta cum vitae consequuntur doloribus eum ratione?
           </p>   
           <div class="work__demo-icons">
             <div class="icons__left"><i class="fa-sharp fa-solid fa-desktop"></i>
@@ -192,7 +193,7 @@
 
   </main>
    <footer class="footer">
-      <p>coded by Raimer Thompson <span>&copy;</span> 2023 </p>
+      <p>Raimer Thompson <span>&copy;</span> 2023 </p>
     </footer>
 
     <script>
@@ -233,33 +234,6 @@
         })
 
       </script>
-      <script>
-        const mobileNv = () => {
-  const headerBtn = document.querySelector('.header__menu-button');
- 
-  const mobileLinks = document.querySelectorAll('.mobile-nav__link');
 
-  // State
-  let isMobileNavOpen = false;
-
-  headerBtn.addEventListener('click', () => {
-    isMobileNavOpen = !isMobileNavOpen;
-    if (isMobileNavOpen) {
-      mobileNav.style.display = 'flex';
-    } else {
-      mobileNav.style.display = 'none';
-    }
-  });
-
-  mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      isMobileNavOpen = false;
-      mobileNav.style.display = 'none';
-    });
-  });
-};
-
-
-      </script>
 </body>
 </html>

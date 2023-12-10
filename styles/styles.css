@@ -1,3 +1,16 @@
+@font-face {
+  font-family: Harmony;
+  src: url(/fonts/HARMONY\ Personal\ use.otf);
+}
+@font-face {
+  font-family: Epika;
+  src: url(/fonts/NT\ Epika\ Regular\ \(PERSONAL\ USE\).otf);
+}
+@font-face {
+  font-family: NY;
+  src: url(/fonts/FontsFree-Net-NewYork.ttf);
+}
+
 * {
   margin: 0;
   box-sizing: border-box;

@@ -6,6 +6,8 @@ position: relative;
 bottom: 2rem;
 flex-direction: column;
 gap: 2em;
+/* background-color: rgb(234, 234, 234); */
+
 }
 
 .hero__main {
@@ -25,14 +27,15 @@ gap: 2em;
 }
 
 .hero__description {
-  font-size: var(--size-md);
+  font-size: var(--size-xl);
 }
 
 .hero__firstname,
 .hero__lastname {
   font-weight: 500;
   font-size: var(--size-6xl);
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
+  font-family: NY;
 }
 
 .hero__lastname {
@@ -41,8 +44,8 @@ gap: 2em;
 }
 
 .hero__big-letter {
-  font-size: var(--size-9xl);
-  font-weight: 900;
+  font-size: var(--size-8xl);
+  /* font-weight: 100; */
 }
 
 .hero__red-i {
@@ -171,7 +174,7 @@ gap: 2em;
   }
   .hero__big-letter {
     font-size: var(--size-10xl);
-    font-weight: 900;
+    font-weight: 500;
   }
 }
 

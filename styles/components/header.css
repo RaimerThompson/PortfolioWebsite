@@ -13,14 +13,15 @@ nav {
   font-weight: 900;
   color: black;
   font-size: var(--size-xl);
-  font-family: 'Lato', cursive;
+  /* font-family: 'Lato', cursive; */
+  font-family: NY;
   position: relative;
   top: 7px;
 }
 
 
 .header__logo-dot {
-  color:rgb(255, 84, 84);
+  /* color:rgb(255, 84, 84); */
   opacity: .9;
 }
 
