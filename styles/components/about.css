@@ -62,6 +62,11 @@
   cursor: default;
 }
 
+.about__title,
+.skills__title{
+  font-family: NY;
+}
+
 /* xs */
 /* @media (min-width: 475px) {} */
 
