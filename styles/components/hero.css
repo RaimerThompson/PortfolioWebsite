@@ -117,7 +117,7 @@ gap: 2em;
 }
 
 
-.hero__work-link::after {
+/* .hero__work-link::after {
   content: '';
   position: absolute;
   border: 1px solid black;
@@ -131,7 +131,7 @@ gap: 2em;
 .hero__work-link:hover::after {
   width: 0%;
   border: 0;
-}
+} */
 
 
 
@@ -156,7 +156,7 @@ gap: 2em;
     flex-direction: row;
   }
  
-
+/* 
   .hero__work-link::after {
     content: '';
     position: absolute;
@@ -166,7 +166,7 @@ gap: 2em;
     left: 5px;
     top: 5px;
     border-radius: 8px;
-  }
+  } */
   .hero__firstname,
   .hero__lastname {
     font-weight: 500;
