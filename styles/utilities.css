@@ -61,15 +61,15 @@
 }
 
 /* xL */
-@media (min-width: 1288px) {
+/* @media (min-width: 1288px) {
   .container {
     max-width: 1288px;
   }
-}
+} */
 
 /* 2xL */
-@media (min-width: 1536px) {
+/* @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
   }
-}  
+}   */
