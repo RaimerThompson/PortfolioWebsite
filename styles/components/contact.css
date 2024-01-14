@@ -5,8 +5,8 @@
   padding-right: 0.2rem;
   padding-top: 1.5rem;
   padding-bottom: 3rem;
-  
 }
+
 .contact__container {
   margin-left: 4rem;
   margin-right: 4rem;
@@ -33,7 +33,7 @@
   color: white;
 }
 .contact__right{
- flex-basis: 60%;
+ /* flex-basis: 60%; */
  align-items: center;
  text-align: center;
 }
