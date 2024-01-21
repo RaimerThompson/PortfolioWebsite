@@ -95,6 +95,7 @@
   
   .about__description {
     max-width: 416px;
+    font-size: .8rem;
     color: rgb(80, 80, 80);
   }
   
@@ -127,7 +128,14 @@
 }
 
 /* md */
-/* @media (min-width: 768px) {} */
+@media (min-width: 768px) {
+    
+  .about__description {
+    max-width: 416px;
+    font-size: 1rem;
+    color: rgb(80, 80, 80);
+  }
+}
 
 /* Lg */
 /* @media (min-width: 1024px) {} */

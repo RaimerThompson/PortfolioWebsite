@@ -97,8 +97,9 @@ gap: 2em;
   position: relative;
   opacity: .9;
   border-radius: 8px;
-  transition: all .1s cubic-bezier(.075,.82,.165,1);
+  /* transition: all .1s cubic-bezier(.075,.82,.165,1); */
   box-shadow: 5px 5px 31px -10px #ff0000;
+  transition: transform ease 500ms;
 }
 
 .hero__work-link button{
@@ -107,8 +108,11 @@ gap: 2em;
 }
 
 .hero__work-link:hover {
-  animation: slideDiagonally 700ms  forwards;
+  /* animation: slideDiagonally 700ms  forwards; */
+  transform: scale(1.1);
+  /* background-color: rgb(204, 204, 204); */
 }
+
 
 .hero__work-link:hover:active{
   /* animation: slideBack 700ms backwards; */
@@ -186,10 +190,10 @@ gap: 2em;
   .hero__firstname,
   .hero__lastname {
     font-weight: 500;
-    font-size: var(--size-6xl);
+    font-size: var(--size-7xl);
   }
   .hero__big-letter {
-    font-size: var(--size-8xl);
+    font-size: var(--size-10xl);
     font-weight: 900;
   }
 

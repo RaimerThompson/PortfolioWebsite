@@ -68,6 +68,7 @@ flex-direction: column;
   font-weight: 400;
   position: relative;
   opacity: .9;
+  transition: color ease 1s, font-weight ease 300ms;
 }
 
 .header__link::after {
