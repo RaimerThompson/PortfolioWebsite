@@ -10,6 +10,12 @@
   font-family: NY;
   src: url(/fonts/FontsFree-Net-NewYork.ttf);
 }
+@font-face {
+  font-family: Custom;
+  src: url(/fonts/Magic\ Bright\ Serif\ Regular.otf);
+}
+
+
 
 * {
   margin: 0;

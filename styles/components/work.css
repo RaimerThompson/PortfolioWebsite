@@ -22,12 +22,12 @@
 .work__title {
   margin-top: 5rem;
   margin-bottom: 1rem;
-  font-family: NY;
+  font-family: Custom;
   letter-spacing: 2px;
 }
 
 .work__title2 {
-  font-family: NY;
+  font-family: Custom;
   letter-spacing: 2px;
   margin-bottom: 2rem;
 }
@@ -188,7 +188,7 @@ transform: translateY(-50%);
     }
 
     .work__title2 {
-      font-family: NY;
+      font-family: Custom;
       letter-spacing: 2px;
       margin-bottom: -1rem;
     }

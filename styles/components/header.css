@@ -14,7 +14,7 @@ nav {
   color: black;
   font-size: var(--size-xl);
   /* font-family: 'Lato', cursive; */
-  font-family: NY;
+  font-family: Custom;
   position: relative;
   top: 7px;
 }
@@ -228,7 +228,7 @@ background: rgba(255, 84, 84, .9);
     font-weight: 900;
     color: black;
     font-size: var(--size-xl);
-    font-family: NY;
+    font-family: Custom;
     position: relative;
     top: 7px;
   }
